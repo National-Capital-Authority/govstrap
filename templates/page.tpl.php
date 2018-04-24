@@ -27,6 +27,9 @@
             $default_header_block = module_invoke('bean', 'block_view', 'section-banner-default');
             print render($default_header_block['content']);
             ?>
+              <div class="block-crumbs">
+                <?php print $breadcrumb; ?>
+              </div>
           <?php endif; ?>
           <?php print render($title_prefix); ?>
           <?php if (!empty($title)): ?>
