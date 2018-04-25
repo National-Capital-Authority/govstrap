@@ -142,6 +142,7 @@ html {
             padding: 1em calc(10% - 15px);
             font-size: 1.25em;
             border-radius: 0;
+            color: $ncaWhite;
             a {
               color: lighten($ncaGreen, 20%);
               text-decoration: none;
@@ -231,6 +232,20 @@ html {
           }
         }
       }
+    }
+    // Pagers
+    .pager li {
+      &:before {
+        display: none;
+      }
+      margin: 0 !important;
+      & > a, & > span {
+        border-radius: 5px;
+      }
+    }
+    // Seearch results
+    ol.search-results {
+      padding-left: 0;
     }
   }
   body.node-type-book {
