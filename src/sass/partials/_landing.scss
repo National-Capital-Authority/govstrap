@@ -50,18 +50,32 @@ html body main #content #page-content {
         position: absolute;
         bottom: 0;
         width: 100%;
+        div:nth-of-type(1) a {
+          background: $ncaBlue;
+          &:hover {
+            background: darken($ncaBlue, 5%);
+          }
+        }
+        div:nth-of-type(2) a {
+          background: $ncaGreen;
+          &:hover {
+            background: darken($ncaGreen, 5%);
+          }
+        }
+        div:nth-of-type(3) a {
+          background: $ncaOrange;
+          &:hover {
+            background: darken($ncaOrange, 5%);
+          }
+        }
         a {
           display: block;
           position: relative;
           padding: 15px 35px;
           width: 100%;
           color: $ncaWhite;
-          background: $ncaGreen;
           text-decoration: none;
           border-bottom: 1px solid $ncaWhite;
-          &:hover {
-            background: darken($ncaGreen, 5%);
-          }
           &:after {
             font-family: govstrap-icons;
             content: "\e902";
