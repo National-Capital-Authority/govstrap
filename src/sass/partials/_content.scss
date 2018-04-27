@@ -247,6 +247,13 @@ html {
     ol.search-results {
       padding-left: 0;
     }
+    @media screen and (max-width: $screen-sm-max) {
+      .col-right.col-md-6 {
+        .field-name-field-location {
+          display: inline-block;
+        }
+      }
+    }
   }
   body.node-type-book {
     p:empty {
