@@ -7,7 +7,7 @@
  * @ingroup views_templates
  */
 ?>
-<div id="homepage-carousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+<div id="homepage-carousel" class="carousel slide" data-ride="carousel" data-interval="6500">
     <div class="carousel-inner">
         <?php foreach ($rows as $id => $row): ?>
           <?php if ($id == 0): ?>
