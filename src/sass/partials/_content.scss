@@ -193,13 +193,48 @@ html {
         }
         // Table
         table {
+          margin: 15px 0;
           max-width: 100% !important;
+          min-width: 66% !important;
+          border: 1px solid $mediumGrey;
+
+          & > tbody > tr:nth-of-type(even) {
+            background-color: $lightGrey;
+          }
+
+            & > tr {
+              & > td,
+              & > th {
+                border-top: 1px solid $lightGrey;;
+                padding: 1em;
+              }
+              & > td {
+                border-bottom: solid 1px $lightGrey;
+              }
+            }
+
+          & > tr > th {
+            border-bottom: solid 2px $mediumGrey;
+            border-top: 0;
+            vertical-align: bottom;
+          }
+
           th, td {
             padding: 5px;
           }
-          tbody {
-            border: 1px solid $mediumGrey
+
+          th {
+            background: $ncaBlue;
+            color: $ncaWhite;
           }
+
+          td.header-sub {
+            background: lighten($mediumGrey, 10%);
+          }
+          td.header-2nd-sub {
+            background: lighten($mediumGrey, 20%);
+          }
+
         }
         // Event venue and attractions
         .ds-event-venue, .ds-attractions {
