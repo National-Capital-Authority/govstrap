@@ -181,3 +181,42 @@ html body main #content #page-content {
     }
   }
 }
+
+// Event venue
+.views-row .node-venue-booking {
+  padding: 15px;
+  margin: 15px 0;
+  background: $lightGrey;
+  .field-name-node-link a {
+    display: inline-block;
+    background: $ncaOrange;
+    padding: 1em 48px 1em 1em;
+    color: $ncaWhite;
+    position: relative;
+    &:after {
+      font-family: govstrap-icons;
+      content: "\e902";
+      display: inline-block;
+      right: 0.5em;
+      position: absolute;
+      top: 50%;
+      margin-top: -10px;
+      font-size: 22px;
+    }
+    &:hover {
+      text-decoration: none;
+      background: darken($ncaOrange, 5%);
+    }
+  }
+}
+.view-venues {
+  .form-submit {
+    @extend .btn;
+    background: $ncaBlue;
+    color: $ncaWhite;
+    &:hover {
+      background: darken($ncaBlue, 5%);
+      color: $ncaWhite;
+    }
+  }
+}
