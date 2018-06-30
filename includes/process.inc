@@ -61,10 +61,13 @@ function _get_active_page_parent() {
   if ($active_trail) {
     end($active_trail);
     $parent = prev($active_trail);
-    $active_page_parent .= '<ul class="menu">';
-    $active_page_parent .= '<li class="leaf active-trail">';
-    $active_page_parent .= l($parent['link_title'], $parent['link_path'], array('attributes' => array('class' => 'active-trail')));
-    $active_page_parent .= '</li></ul>';
+    if ($parent['link_path']) {
+      $active_page_parent .= '<ul class="menu">';
+      $active_page_parent .= '<li class="leaf active-trail">';
+      $active_page_parent .= l($parent['link_title'], $parent['link_path'], array('attributes' => array('class' => 'active-trail')));
+      $active_page_parent .= '</li></ul>';
+      return $active_page_parent;
+    }
   }
-  return $active_page_parent;
+  return NULL;
 }

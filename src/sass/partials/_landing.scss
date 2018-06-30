@@ -220,3 +220,22 @@ html body main #content #page-content {
     }
   }
 }
+.panel-heading {
+  padding: 0;
+  h2.panel-title {
+    a {
+      font-size: 22px;
+      padding: 10px 15px;
+      display: block;
+      &:hover,
+      &:active,
+      &:visited,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.panel-collapse .panel-body h3 {
+  font-size: 20px;
+}
